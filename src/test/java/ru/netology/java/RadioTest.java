@@ -16,7 +16,7 @@ public class RadioTest {
             "9, 9",
             "10, 0"
     })
-    public void shouldCheckMaxStationSet(int stationNumber, int expected){
+    public void shouldCheckMaxStationSet(int stationNumber, int expected) {
 
         Radio radio = new Radio();
 
@@ -33,7 +33,7 @@ public class RadioTest {
             "0, 0",
             "-1, 0"
     })
-    public void shouldCheckMinStationSet(int stationNumber, int expected){
+    public void shouldCheckMinStationSet(int stationNumber, int expected) {
 
         Radio radio = new Radio();
         radio.setStation(stationNumber);
@@ -49,7 +49,7 @@ public class RadioTest {
             "8, 9",
             "9, 0"
     })
-    public void shouldCheckMaxStationSwitch(int stationNumber, int expected){
+    public void shouldCheckMaxStationSwitch(int stationNumber, int expected) {
 
         Radio radio = new Radio();
 
@@ -68,7 +68,7 @@ public class RadioTest {
             "1, 0",
             "0, 9"
     })
-    public void shouldCheckMinStationSwitch(int stationNumber, int expected){
+    public void shouldCheckMinStationSwitch(int stationNumber, int expected) {
 
         Radio radio = new Radio();
 
@@ -87,10 +87,10 @@ public class RadioTest {
             "10, 10",
             "11, 10"
     })
-    public void shouldCheckMaxVolume(int clicks, int expected){
+    public void shouldCheckMaxVolume(int clicks, int expected) {
 
         Radio radio = new Radio();
-        for(int i = 0; i < clicks; i++){
+        for (int i = 0; i < clicks; i++) {
             radio.increaseVolume();
         }
 
@@ -105,7 +105,7 @@ public class RadioTest {
             "2, 0",
             "3, 0"
     })
-    public void shouldCheckMinVolume(int clicks, int expected){
+    public void shouldCheckMinVolume(int clicks, int expected) {
 
         Radio radio = new Radio();
 
